@@ -1,0 +1,76 @@
+* {
+    font-size: 14px;
+}
+
+body {
+    width: 250px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#cpfContainer, #cnpjContainer {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;  
+    border-color: 1px solid rgb(9, 48, 56);  
+    background-color: white;
+    color: rgb(17, 86, 102);
+}
+
+#copyCPF, #generateCPF, #generateCNPJ, #copyCNPJ {
+    padding: 8px;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 8px;  
+    border-color: 1px solid rgb(9, 48, 56);  
+    background-color: rgb(17, 86, 102);
+    color: white;
+}
+
+#copyMessage, #copyCnpjMessage {
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid  rgb(17, 86, 102);
+    background-color: rgb(9, 48, 56);
+    color: white;
+    font-size: 14px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons-wrapper #copyValue, #backButton {
+    padding: 8px;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 8px; 
+    font-size: 14px; 
+}
+
+#copyValue {
+    border: 1px solid  rgb(17, 86, 102);
+    background-color: rgb(9, 48, 56);
+    color: white;    
+}
+
+#backButton {
+    border: 1px solid  rgb(9, 48, 56);
+    background-color: #fff;
+    color: rgb(9, 48, 56);  
+}
+
+.visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

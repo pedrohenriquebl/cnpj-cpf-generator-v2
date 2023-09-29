@@ -1,0 +1,19 @@
+{
+  "name": "cpf-validator",
+  "version": "1.0.0",
+  "description": "Quick way to generate a fast valid CNPJ/CPF",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Pedro Barcellos",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

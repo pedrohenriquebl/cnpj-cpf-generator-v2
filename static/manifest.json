@@ -1,0 +1,17 @@
+{
+    "name": "Panda CPF/CNPJ Generator",
+    "description": "Quick way to generate a fast valid CPF/CNPJ",
+    "version": "0.1.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./assets/extension-icons/panda16.png",
+        "48": "./assets/extension-icons/panda48.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./assets/extension-icons/panda16.png",
+            "48": "./assets/extension-icons/panda48.png"
+        }
+    }
+}
