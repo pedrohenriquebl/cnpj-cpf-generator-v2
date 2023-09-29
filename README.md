@@ -14,7 +14,7 @@ The Panda CPF/CNPJ Generator Extension is a browser extension that provides a qu
 
 ## Installation
 
-### Chrome Web Store (Coming Soon)
+### Chrome Web Store
 
 The extension will be available for installation on the Chrome Web Store. Visit the [extension page](#) and click "Add to Chrome" to install.
 
