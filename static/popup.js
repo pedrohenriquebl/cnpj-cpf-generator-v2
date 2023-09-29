@@ -11,7 +11,7 @@ function initializePopup () {
     const typeCpf = 'CPF'
     const typeCnpj = 'CNPJ'
 
-    document.getElementById('generateCNPJ').addEventListener('click', function () {
+    const createCnpj = () => {
         const newCnpj = new CreateCNPJ();
         const generatedCnpj = newCnpj.generateCnpj();
 
@@ -24,9 +24,9 @@ function initializePopup () {
         backButton.addEventListener('click', function () {
             actionBackButton(cnpjContainer, copyButton, backButton);
         });
-    });
+    }
 
-    document.getElementById('generateCPF').addEventListener('click', function () {
+    const createCpf = () => {
         const newCpf = new CreateCPF();
         const generatedCpf = newCpf.generateCpf();
 
@@ -40,7 +40,10 @@ function initializePopup () {
         backButton.addEventListener('click', function () {
             actionBackButton(cpfContainer, copyButton, backButton);
         });
-    });
+    }
+
+    document.getElementById('generateCNPJ').addEventListener('click', createCnpj);
+    document.getElementById('generateCPF').addEventListener('click', createCpf);
 }
 
 initializePopup();
