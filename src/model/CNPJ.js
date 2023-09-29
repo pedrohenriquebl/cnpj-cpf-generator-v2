@@ -9,7 +9,7 @@ function CNPJ (cnpj) {
 }
 
 function CreateCNPJ () {
-    CNPJ.call(this,'')
+    CNPJ.call(this, '')
 }
 
 CreateCNPJ.prototype = Object.create(CNPJ.prototype);

@@ -1,5 +1,7 @@
 import {CreateCNPJ} from '../src/model/CNPJ';
 import {CreateCPF} from '../src/model/CPF';
+import { handleElementsStyle } from "../utils/handleElementsStyle";
+import { actionCopyButton, actionBackButton } from "../utils/actionButtons";
 
 function initializePopup () {
     const cpfContainer = document.getElementById('cpfContainer');
@@ -20,7 +22,7 @@ function initializePopup () {
         });
 
         backButton.addEventListener('click', function () {
-            handleBackButton(cnpjContainer, copyButton, backButton);
+            actionBackButton(cnpjContainer, copyButton, backButton);
         });
     });
 
@@ -36,40 +38,9 @@ function initializePopup () {
         });
 
         backButton.addEventListener('click', function () {
-            handleBackButton(cpfContainer, copyButton, backButton);
+            actionBackButton(cpfContainer, copyButton, backButton);
         });
     });
-}
-
-const handleElementsStyle = (visibleContainer, hiddenContainer, copyBtn, backBtn, dataGenerated, type) => {
-    visibleContainer.textContent = `Generated ${type}: ${dataGenerated}`;
-    visibleContainer.style.display = 'block';
-    hiddenContainer.style.display = 'none';
-    copyBtn.style.display = 'block';
-    backBtn.style.display = 'block';
-}
-
-const actionCopyButton = (generateData, type) => {
-    const textarea = document.createElement('textarea');
-    textarea.value = generateData;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    const copyMessage = document.getElementById('copyMessage');
-    copyMessage.textContent = `${type} Copied!`;
-    copyMessage.style.display = 'block';
-
-    setTimeout(function () {
-        copyMessage.style.display = 'none';
-    }, 5000);
-}
-
-const handleBackButton = (visibleContainer, copyButton, backButton) => {
-    visibleContainer.style.display = 'none';
-    copyButton.style.display = 'none';
-    backButton.style.display = 'none';
-    document.getElementById('copyMessage').style.display = 'none';
 }
 
 initializePopup();

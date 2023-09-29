@@ -6,6 +6,8 @@ module.exports = {
     popup: './static/popup.js',
     cnpj: './src/model/CNPJ.js',
     cpf: './src/model/CPF.js',
+    handleElementStyle: './utils/handleElementsStyle.js',
+    actionButtons: './utils/copyButton.js',
     style: './static/style/style.css'
   },
   output: {
