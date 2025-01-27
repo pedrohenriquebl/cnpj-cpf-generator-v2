@@ -16,10 +16,7 @@ function initializePopup () {
         const generatedCnpj = newCnpj.generateCnpj();
 
         handleElementsStyle(cnpjContainer, cpfContainer, copyButton, backButton, generatedCnpj, typeCnpj);
-
-        copyButton.addEventListener('click', function () {
-            actionCopyButton(generatedCnpj, typeCnpj);
-        });
+        actionCopyButton(generatedCnpj, typeCnpj);
 
         backButton.addEventListener('click', function () {
             actionBackButton(cnpjContainer, copyButton, backButton);
@@ -31,11 +28,7 @@ function initializePopup () {
         const generatedCpf = newCpf.generateCpf();
 
         handleElementsStyle(cpfContainer, cnpjContainer, copyButton, backButton, generatedCpf, typeCpf);
-
-        copyButton.addEventListener('click', function () {
-
-            actionCopyButton(generatedCpf, typeCpf);
-        });
+        actionCopyButton(generatedCpf, typeCpf);
 
         backButton.addEventListener('click', function () {
             actionBackButton(cpfContainer, copyButton, backButton);
