@@ -7,7 +7,7 @@ module.exports = {
     cnpj: './src/model/CNPJ.js',
     cpf: './src/model/CPF.js',
     handleElementStyle: './utils/handleElementsStyle.js',
-    actionButtons: './utils/copyButton.js',
+    actionButtons: './utils/actionButtons.js',
     style: './static/style/style.css'
   },
   output: {
